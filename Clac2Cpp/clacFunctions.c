@@ -43,9 +43,10 @@ int modulous(int a, int b)
 //inputs two ints and returns int a to the power of int b
 int power(int a, int b)
 {
+	int c = a;
 	for (int i = 1; i < b; i++)
 	{
-		a = a * a;
+		a = a * c;
 	}
 	return a;
 }
