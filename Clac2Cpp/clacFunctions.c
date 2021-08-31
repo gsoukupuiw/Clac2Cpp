@@ -2,14 +2,14 @@
 
 
 //inputs two ints and returns their sum
-int add(int a, int b)
+float add(float a, float b)
 {
 	a = a + b;
 	return a;
 }
 
 //inputs two ints and returns a - b
-int subtract(int a, int b)
+float subtract(float a, float b)
 {
 	a = a - b;
 	return a;
@@ -17,7 +17,7 @@ int subtract(int a, int b)
 
 
 //inputs two ints and returns their product
-int multiply(int a, int b)
+float multiply(float a, float b)
 {
 	a = a * b;
 	return a;
@@ -25,7 +25,7 @@ int multiply(int a, int b)
 
 
 //inputs two ints and returns int a divided by int b
-int divide(int a, int b)
+float divide(float a, float b)
 {
 	a = a / b;
 	return a;
@@ -33,18 +33,30 @@ int divide(int a, int b)
 
 
 //inputs two ints and returns int a mod int b
-int modulous(int a, int b)
+float modulous(float a, float b)
 {
-	a = a % b;
+	//a = a % b;
 	return a;
 }
 
 
 //inputs two ints and returns int a to the power of int b
-int power(int a, int b)
+float power(float a, float b)
 {
-	int c = a;
+	float c = a;
 	for (int i = 1; i < b; i++)
+	{
+		a = a * c;
+	}
+	return a;
+}
+
+
+//inputs two ints and returns the b root of a
+float root(float a, float b)
+{
+	float c = (1/b);
+	for (float i = 1; i < b; i++)
 	{
 		a = a * c;
 	}

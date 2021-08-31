@@ -8,11 +8,11 @@
 
 int main()
 {
-	int f;
-	int s;
+	float f;
+	float s;
 	scanf_s("%d", &f);
 	scanf_s("%d", &s);
-	f = power(f, s);
-	printf("%d \n",f);
+	f = root(f, s);
+	printf("%p \n",f);
 	return 0;
 }
