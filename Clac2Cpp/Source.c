@@ -13,6 +13,6 @@ int main()
 	scanf_s("%d", &f);
 	scanf_s("%d", &s);
 	f = root(f, s);
-	printf("%p \n",f);
+	printf("%.6f\n",f);
 	return 0;
 }
